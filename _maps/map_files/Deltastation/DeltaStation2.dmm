@@ -38677,7 +38677,6 @@
 /obj/machinery/power/terminal{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/structure/sign/warning/electric_shock/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
@@ -43947,6 +43946,9 @@
 	pixel_x = 5
 	},
 /obj/machinery/camera/autoname/directional/south,
+/obj/item/toy/figure/bitrunner{
+	pixel_x = -6
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/bitrunning/den)
 "kUn" = (
@@ -44971,8 +44973,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "lhp" = (
-/obj/item/kirbyplants/random,
 /obj/structure/sign/poster/official/report_crimes/directional/south,
+/obj/structure/aquarium/lawyer,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
 "lhC" = (
@@ -77768,7 +77770,6 @@
 /obj/machinery/power/terminal{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/structure/sign/warning/electric_shock/directional/south,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)

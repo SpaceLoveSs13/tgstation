@@ -219,6 +219,7 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	flags_cover = MASKCOVERSEYES
 	visor_flags_inv = HIDEEYES
 	visor_flags_cover = MASKCOVERSEYES
+	visor_vars_to_toggle = VISOR_FLASHPROTECT | VISOR_TINT
 	resistance_flags = FIRE_PROOF
 
 /datum/armor/gas_welding
@@ -226,6 +227,9 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	bio = 100
 	fire = 100
 	acid = 55
+
+/obj/item/clothing/mask/gas/welding/attack_self(mob/user)
+	adjust_visor(user)
 
 /obj/item/clothing/mask/gas/welding/adjust_visor(mob/living/user)
 	. = ..()
@@ -273,6 +277,7 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	dye_color = DYE_CLOWN
 	w_class = WEIGHT_CLASS_SMALL
 	flags_cover = MASKCOVERSEYES
+	clothing_traits = list(TRAIT_PERCEIVED_AS_CLOWN)
 	resistance_flags = FLAMMABLE
 	actions_types = list(/datum/action/item_action/adjust)
 	dog_fashion = /datum/dog_fashion/head/clown
